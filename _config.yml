@@ -1,1 +1,28 @@
-remote_theme: pages-themes/cayman@v1.1.0
+# _config.yml
+
+# サイトの基本情報
+title: My Awesome Site
+description: "A GitHub Pages site powered by Jekyll"
+url: "https://your-username.github.io"  # 自分のGitHub Pages URLに置き換える
+baseurl: ""  # サブディレクトリに置く場合は /repo-name に変更
+
+# GitHub Pages 設定
+remote_theme: pages-themes/cayman@v1.2.0  # 存在する最新バージョンを指定
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-github-metadata
+
+# ページ表示設定
+paginate: 5        # 1ページあたりの記事数
+paginate_path: "/page:num"
+
+# SEO設定
+seo:
+  title: My Awesome Site
+  description: "A GitHub Pages site powered by Jekyll"
+
+# 追加設定
+markdown: kramdown
+
